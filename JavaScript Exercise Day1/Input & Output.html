@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Day 01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white min-h-screen flex items-center justify-center">
+    
+    <div class="bg-white border border-gray-300 p-8 rounded-2xl max-w-xl w-full">
+        <h1 class="text-2xl font-bold text-center text-gray-800">
+            To see the results, open the console (F12)
+        </h1>
+    </div>
+
+    <script>
+
+        /* 
+        * JAVASCRIPT INPUT & OUTPUT PRACTICE
+        * See results in console (F12)
+        */
+
+        console.log("================================");
+        console.log("INPUT & OUTPUT PRACTICE START");
+        console.log("================================");
+
+        /* 
+        * 1. console.log() - OUTPUT Title
+        */
+       console.log("\n--- 1. console.log() ---");
+
+       // Basic output
+       console.log("Hello World!");
+       console.log("Welcome to JavaScript");
+
+       // Output multiple values
+       let name = "Dara";
+       let age  = 20;
+
+       console.log("Name:", name);
+       console.log("Age:", age);
+
+       // Output object and array
+       let student = { name: "Nita", score: 90};
+       let numbers = [1, 2, 3, 4];
+
+       console.log("Student Object:", student);
+       console.log("Numbers Array:", numbers);
+
+       /* 
+       * 2. document.write() - OUTPUT (Web Page)
+       */
+      console.log("\n--- 2. document.write() ---");
+
+      // Writes directly to the HTML page
+      document.write("<h2>Document Write Output</h2>");
+      document.write("<p>Hello Students!</p>");
+      document.write("<p>10 + 5 = " + (10 + 5) + "</p>");
+
+      // IMPORTANT NOTE:
+      // console.log("document.write() writes to the web page, NOT console");
+
+      /* 
+      * 3. alert() - OUTPUT (Popup)
+      */
+     console.log("\n--- 3. alert() ---");
+
+     alert("This is an alert message!");
+     alert("Hello " + name);
+
+     /* 
+     * 4. confirm() - INPUT (true/false)
+     */
+    console.log("\n--- 4. confirm() ---");
+
+    let isStudent = confirm("Are you a student?");
+    console.log("Confirm result:", isStudent);
+
+    if (isStudent) {
+        console.log("User clicked OK");
+    } else {
+        console.log("User clicked Cancel");
+    }
+
+    /* 
+    * 5. prompt() - INPUT (user input)
+    */
+   console.log("\n--- 5. prompt() ---");
+
+   let userName = prompt("Enter your name:");
+   console.log("User name:", userName);
+
+   let userAge = prompt("Enter your age:");
+   console.log("User age:", userAge);
+
+   /* 
+   * 6. COMBINED EXAMPLE
+   */
+  console.log("\n--- 6. COMBINE EXAMPLE ---");
+
+  let nameInput = prompt("What is your name?");
+  let ageInput = prompt("How old are you?");
+
+  console.log("Name:", nameInput);
+  console.log("Age:", ageInput);
+
+  alert("Hello " + nameInput + "! You are " + ageInput + " years old.");
+
+  console.log("\n====================================");
+  console.log("INPUT & OUTPUT PRACETICE END");
+  console.log("======================================");
+
+    </script>
+
+</body>
+</html>

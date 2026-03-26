@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Day 01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white min-h-screen flex items-center justify-center">
+
+    <div class="bg-white border border-gray-300 p-8 rounded-2xl max-w-xl w-full">
+        <h1 class="text-2xl font-bold text-center mb-4 text-gray-800">
+            JavaScript Day 01
+        </h1>
+
+        <button onclick="runExample();" id="demo"
+        class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold transition">
+        Run Example
+        </button>
+    </div>
+
+    <script>
+        function runExample() {
+            document.getElementById("demo").innerText = "You clicked the button!";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Day 01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white min-h-screen flex items-center justify-center">
+
+    <div class="bg-white border border-gray-300 p-8 rounded-2xl max-w-xl w-full">
+        <h1 class="text-2xl font-bold text-center text-gray-800">
+            To see the results, open the console (F12)
+        </h1>
+    </div>
+
+    <script>
+
+        /*
+        * 6. CONTROL STATEMENTS
+        */
+       console.log("\n--- 6. CONTROL STATEMENTS ---");
+
+       // if
+       let temperature = 35;
+       if (temperature > 30) {
+        console.log("It is hot.");
+       }
+
+       // iff...else
+       let hour = 20;
+       if (hour < 12) { console.log("Good morning"); } else { console.log("Good evening"); } // if...else if
+       marks=85; if (marks>= 90) {
+        console.log("Grade A");
+       } else if (marks >= 80) {
+        console.log("Grade B");
+       } else if (marks >= 70) {
+        console.log("Grade C");
+       } else {
+        console.log("Grade D");
+       }
+
+       // switch
+       let day = 3;
+       switch (day) {
+        case 1:
+            console.log("Monday");
+            break;
+            case 2:
+                console.log("Tuesday");
+                break;
+                case 3:
+                    console.log("Wednesday");
+                    break;
+                    case 4:
+                        console.log("Thursday");
+                        break;
+                        default:
+                        console.log("Unknown day");
+                        break;
+       }
+
+       /*
+       * 7. LOOPS
+       */
+      console.log("\n--- 7. LOOPS ---");
+
+      // for loop
+      console.log("for loop:");
+      for (let i = 1; i <= 5; i++) {
+        console.log("i=", i);
+      }
+
+      // while loop
+      console.log(" while loop:"); let w=1; while (w <=3) {
+        console.log("w=", w);
+        w++;
+      }
+
+      // do...while loop
+      console.log(" do...while loop:"); let d=1; do { console.log("d=", d);
+        d++;
+      } while (d <= 3);
+
+      // for...in with object
+      console.log(" for...in loop with object:"); let student={ name: "Vannak", age: 19, grade: "A"}; for (let key 
+      in student) { console.log(key + " =", student[key]); } // for...in with array (shows index)
+      console.log("for...in loop with array:"); let colors=["red", "green", "blue"]; for (let index in colors) {
+        console.log("index=", index, " , value=", colors[index]);
+      }
+
+      // for...of with array
+      console.log(" for...of loop with array:"); for (let color of colors) { console.log("color=", color);
+        
+      }
+
+    </script>
+
+</body>
+
+</html>

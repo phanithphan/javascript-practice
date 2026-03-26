@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Day 01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white min-h-screen flex items-center justify-center">
+
+    <div class="bg-white border border-gray-300 p-8 rounded-2xl max-w-xl w-full">
+        <h1 class="text-2xl font-bold text-center text-gray-800">
+            To see the results, open the console (F12)
+        </h1>
+
+    </div>
+
+    <script>
+        
+        /* 
+        * VARIABLES
+        */
+       console.log("\n--- 2. VARIABLES ---");
+
+       // var
+       var studentName = "Dara";
+       console.log("var studentName =", studentName);
+
+       // let 
+       let age = 20;
+       console.log("let age =", age);
+
+       // const
+       const COUNTRY = "Cambodia";
+       console.log("const COUNTRY =", COUNTRY);
+
+       // changing var and let
+       studentName = "Nita";
+       age = 21;
+
+       console.log("Updated studentName =", studentName);
+       console.log("Updated age =", age);
+
+       // const cannot be changed
+       // COUNTRY = "USA"; // ERROR (uncomment to test)
+       // console.log("Updated COUNTRY =", COUNTRY);
+
+       /* 
+       * 3. DATA TYPES
+       */
+      console.log("\n--- 3. DATA TYPESS ---");
+
+      let strValue = "Hello";
+      let numValue = 100;
+      let boolValue = true;
+      let objValue = { name: "John", score: 90 };
+      let arrValue = [10, 20, 30];
+      let undefValue;
+      let nullValue = null;
+      let funcValue = function () {};
+
+      console.log("typeof strValue =", typeof strValue); // string
+      console.log("typeof numValue =", typeof numValue); // number
+      console.log("typeof boolValue =", typeof boolValue); // boolean
+      console.log("typeof objValue =", typeof objValue); // object
+      console.log("typeof arrValue =", typeof arrValue); // object
+      console.log("typeof undefValue =", typeof undefValue); // undefined
+      console.log("typeof nullValue =", typeof nullValue); // object
+      console.log("typeof funcValue =", typeof funcValue); // function
+
+      console.log("arrValue instanceof Array =", arrValue instanceof Array);
+      console.log("objValue instanceof Object =", objValue instanceof Object);
+
+    </script>
+
+</body>
+
+</html>

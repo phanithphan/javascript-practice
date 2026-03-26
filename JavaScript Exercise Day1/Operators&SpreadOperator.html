@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Day 01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white min-h-screen flex items-center justify-center">
+
+    <div class="bg-white border border-gray-300 p-8 rounded-2xl max-w-xl w-full">
+        <h1 class="text-2xl font-bold text-center text-gray-800">
+            To see result, open the console (F12)
+        </h1>
+    </div>
+
+    <script>
+
+        /*
+        * 4. OPERATORS
+        */
+       console.log("\n--- 4. OPERATORS ---");
+
+       let a = 10;
+       let b = 3;
+
+       console.log("a =", a, ", b =", b);
+
+       // Arithmetic Operators
+       console.log("a + b =", a + b);
+       console.log("a - b =", a - b);
+       console.log("a * b =", a * b);
+       console.log("a / b =", a / b);
+       console.log("a % b =", a % b);
+
+       // Assignment Operators
+       let c = 5;
+       console.log("c =", c);
+       c++;
+       console.log("c++ =", c);
+       c--;
+       console.log("c-- =", c);
+
+       // Comparison Operators
+       console.log("10 == '10' =", 10 == "10");
+       console.log("10 === '10' =", 10 === "10");
+       console.log("10 != 5 =", 10 != 5);
+       console.log("10 > 5 =", 10 > 5);
+       console.log("10 < 5 =", 10 < 5);
+       console.log("10 >= 10 =", 10 >= 10);
+       console.log("10 <= 9 =", 10 <= 9);
+
+       // Logical Operators
+       console.log(" true && false=", true && false);
+       console.log(" true || false=", true || false);
+       console.log(" !true=", !true);
+
+       // Ternary Operator
+       let score = 75;
+       let resultText = score >= 50 ? " Pass" : "Fail" ; console.log("score=", score, "=>", resultText);
+
+       /*
+       * 5. SPREAD OPERATOR
+       */
+      console.log("\n--- 5. SPREAD OPERATOR ---");
+
+      // Array copy
+      let arr1 = [1, 2, 3];
+      let arr2 = [...arr1];
+      console.log("arr1 =", arr1);
+      console.log("arr2 copied from arr1 =", arr2);
+
+      // Array combine
+      let arr3 = [...arr1, 4, 5];
+      console.log("arr3 combined =", arr3);
+
+      // Object copy
+      let user1 = { name: "Alice", age: 22};
+      let user2 = { ...user1};
+      console.log("user1 =", user1);
+      console.log("user2 copied from user1 =", user2);
+
+      // Object combine
+      let user3 = { ...user1, country: "Cambodia"};
+      console.log("user3 extended =", user3);
+
+
+    </script>
+
+</body>
+
+</html>

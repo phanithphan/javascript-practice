@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Day 01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white min-h-screen flex items-center justify-center">
+    <div>
+    <h1 class="bg-white border border-gray-300 p-8 rounded-2xl max-w-xl w-full">
+        To see the results, open the console (F12)
+    </h1>
+    </div>
+
+    <script>
+
+        /*
+        * 8. FUNCTIONS
+        */
+       console.log("\n--- 8. FUNCTIONS ---");
+
+       // basic function
+       function sayHello(){
+        console.log("Hello from function!");
+       }
+       sayHello();
+
+       // function with parameters
+       function greet(name) {
+        console.log("Hello, " + name);
+       }
+       greet("Sokha");
+
+       // function with return
+       function add(x, y) {
+        return x + y;
+       }
+       let sum = add(5, 7);
+       console.log("add(5, 7) =", sum);
+
+       // more examples
+       function multiply(x, y) {
+        return x * y;
+       }
+       console.log("multiply(4, 6) =", multiply(4, 6));
+
+       function isEven(number) {
+        return number % 2 === 0;
+       }
+       console.log("isEven(8) =", isEven(8));
+       console.log("isEven(7) =", isEven(7));
+
+       /*
+       * 9. CALLBACK FUNCTIONS
+       */
+      console.log("\n--- 9. CALLBACK FUNCTIONS ---");
+
+      function processUserInput(name, callback) {
+        console.log("Processing user:", name);
+        callback(name);
+      }
+
+      function showWelcomeMessage(name) {
+        console.log("Welcome, " + name + "!");
+      }
+
+      processUserInput("David", showWelcomeMessage);
+
+      // callback with anonymous function
+      processUserInput("Linda", function (name) {
+        console.log("Anonymous callback says hello to " + name);
+      });
+
+      /*
+      * 10. ANONYMOUS FUNCTION
+      */
+     console.log("\n--- 10. ANONYMOUS FUNCTION ---");
+
+     let sayHi = function () {
+        console.log("Hi from anonymous function");
+     };
+
+     sayHi();
+
+     let subtract = function (x, y) {
+        return x - y;
+     };
+
+     console.log("subtract(10, 4) =", subtract(10, 4));
+
+     /*
+     * 11. ARROW FUNCTIONS
+     */
+    console.log("\n--- 11. ARROW FUNCTIONS ---");
+
+    // normal arrow function
+    let divide = (x, y) => {
+        return x / y;
+    };
+    console.log("divide(20, 5) =", divide(20, 5));
+
+    // short arrow function
+    let square = n => n * n;
+    console.log("square(6) =", square(6));
+
+    // arrow function with multiple parameters
+    let power = (base, exponent) => base ** exponent;
+    console.log("power(2, 3) =", power(2, 3));
+
+    // arrow function no parameter
+    let showMessage = () => console.log("Arrow function with no parameter");
+    showMessage();
+
+    /*
+    * 12. STRING FUNCTIONS
+    */
+   console.log("\n--- 12. STRING FUNCTIONS ---");
+
+   let text = " JavaScript Programming ";
+   console.log("Original text =", '"${text}"');
+
+   console.log("length =", text.length);
+   console.log("trim() =", '"${text.trim()}"');
+   console.log("toUpperCase() =", text.toUpperCase());
+   console.log("toLowerCase =", text.toLowerCase());
+   console.log("indexOf('Script') =", text.indexOf("Script"));
+   console.log("substring(2, 12) =", text.substring(2, 12));
+   console.log("replace('JavaScript', 'JS' =", text.replace("JavaScript", "JS"));
+   console.log("charAt(3) =", text.charAt(3));
+   console.log("split(' ') =", text.trim().split(" "));
+
+   let sentence = "apple,banana,mango";
+   console.log("sentence.split(',') =", sentence.split(','));
+
+   /*
+   * 13. NUMBER FUNCTIONS
+   */
+  console.log("\n--- 13. NUMBER FUNCTIONS ---");
+
+  let price = 12.34567;
+  console.log("price =", price);
+  console.log("price.toFixed(2) =", price.toFixed(2));
+  console.log("price.toFixed(3) =", price.toFixed(3));
+
+  console.log("Number('123') =", Number("123"));
+  console.log("Number('123abc') =", Number("123abc")); // NaN
+
+  console.log("parseInt('45px') =", parseInt("45px"));
+  console.log("parseInt('100.99') =", parseInt("100.99"));
+  console.log("parseInt('3.14159abc') =", parseInt("3.14159abc"));
+
+  console.log("isNan(Number('Hello')) =", isNaN(Number('Hello')));
+
+  /*
+  * 14. MATH OBJECT
+  */
+ console.log("\n--- 14. MATH OBJECT ---");
+
+ // Properties
+ console.log("Math.PI =", Math.PI);
+ console.log("Math.SQRT2 =", Math.SQRT2);
+ console.log("Math.SQRT1_2 =", Math.SQRT1_2);
+ console.log("Math.LN2 =", Math.LN2);
+ console.log("Math.LN10 =", Math.LN10);
+ console.log("Math.LOG2E =", Math.LOG2E);
+ console.log("Math.LOG10E =", Math.LOG10E);
+
+ // Methods
+ let num1 = 4.7;
+ let num2 = 4.2;
+ let num3 = 4.9;
+
+ console.log("Math.round(4.7) =", Math.round(num1));
+ console.log("Math.ceil(4.2) =", Math.ceil(num2));
+ console.log("Math.floor(4.9) =", Math.floor(num3));
+ console.log("Math.trunc(4.9) =", Math.trunc(num3));
+
+ console.log("Math.sqrt(25) =", Math.sqrt(25));
+ console.log("Math.pow(2, 4) =", Math.pow(2, 4));
+ console.log("Math.abs(-15) =", Math.abs(-15));
+ console.log("Math.min(2, 8, 1, 10) =", Math.min(2, 8, 1, 10));
+ console.log("Math.max(2, 8, 1, 10) =", Math.max(2, 8, 1, 10));
+ console.log("Math.random() =", Math.random());
+
+ // random integer example
+ let randomNumber = Math.floor(Math.random() * 10) + 1;
+ console.log("Randsom integer from 1 to 10 =", randomNumber);
+
+    </script>
+
+</body>
+</html>
