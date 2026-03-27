@@ -1,0 +1,76 @@
+{
+  "site": {
+    "title": "Phanith Phan | Fullstack Developer",
+    "brand": "Phanith Phan"
+  },
+  "navigation": [
+    { "label": "Home", "href": "#home" },
+    { "label": "About", "href": "#about" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "home": {
+    "title": "Fullstack Developer",
+    "subtitle": "Building responsive web applications with React and Laravel",
+    "image": "profile.jpg",
+    "buttons": [
+      {
+        "label": "Hire Me",
+        "href": "#contact",
+        "className": "bg-cyan-500 hover:bg-cyan-600 text-black px-6 py-3 rounded-lg font-semibold transition"
+      },
+      {
+        "label": "View Skills",
+        "href": "#skills",
+        "className": "border border-slate-700 px-6 py-3 rounded-lg hover:bg-slate-800 transition"
+      }
+    ]
+  },
+  "about": {
+    "paragraph1": "I am a fullstack developer based in Phnom Penh with over 3 years of experience building web applications.",
+    "paragraph2": "I focus on clean, maintainable code and building fast, responsive UI.",
+    "tags": [
+      { "name": "HTML", "className": "bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-sm" },
+      { "name": "CSS", "className": "bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm" },
+      { "name": "JavaScript", "className": "bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-sm" },
+      { "name": "React", "className": "bg-cyan-400/20 text-cyan-200 px-3 py-1 rounded-full text-sm" },
+      { "name": "Laravel", "className": "bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-sm" },
+      { "name": "MySQL", "className": "bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-sm" },
+      { "name": "AWS", "className": "bg-orange-500/20 text-orange-300 px-3 py-1 rounded-full text-sm" }
+    ]
+  },
+  "skills": [
+    {
+      "title": "Responsive Design",
+      "description": "Build mobile-first responsive layouts"
+    },
+    {
+      "title": "React Development",
+      "description": "Hooks, components, state management"
+    },
+    {
+      "title": "Laravel API",
+      "description": "REST API & backend architecture"
+    },
+    {
+      "title": "Database",
+      "description": "MySQL & PostgreSQL design"
+    },
+    {
+      "title": "DevOps",
+      "description": "AWS deployment & CI/CD pipelines"
+    },
+    {
+      "title": "Cloud",
+      "description": "AWS deployment"
+    }
+  ],
+  "footer": {
+    "text": "© 2026 Phanith Phan. All rights reserved.",
+    "links": [
+      { "label": "GitHub", "href": "#" },
+        { "label": "LinkedIn", "href": "#" },
+        { "label": "Twitter", "href": "#" }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900 text-white">
+        
+        <!-- HEADER -->
+        <header class="sticky top-0 bg-slate-900/80 backdrop-blur border-b border-slate-800 z-50">
+          <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <h1 id="brandName" class="text-xl font-bold">Loading...</h1>
+           
+            <!-- Desktop Nav -->
+            <nav class="hidden md:block">
+              <ul id="desktopNav" class="flex gap-6 text-sm"></ul>
+                <ul class="flex gap-6 text-sm">
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center gap-1 w-10 h-10 rounded-lg border border-slate-700 hover:bg-slate-800 transition" aria-label="Open Menu">
+              <span class="w-5 h-0.5 bg-white"></span>
+              <span class="w-5 h-0.5 bg-white"></span>
+              <span class="w-5 h-0.5 bg-white"></span>
+            </button>
+          </div>
+
+            <!-- Mobile Nav -->
+            <nav id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-slate-900">
+              <ul id="mobileNav" class="flex justify-between px-6 py-4 text-sm"></ul>
+              </nav>
+        </header>
+
+            <!-- HOME -->
+            <section id="home" class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center" aria-labelledby="home-title">
+               
+                <div class="space-y-6">
+                    <h1 id="homeTitle" class="text-4xl md:text-5xl font-bold leading-tight">
+                    Loading...
+                    </h1>
+
+                <p id="homeSubtitle" class="text-slate-300 text-lg">
+                    Loading...
+                </p>
+
+                <div id="homeButtons" class="flex gap-4 flex-wrap"></div>
+                </div>
+
+                 <div class="flex justify-center">
+                    <img id="homeImage" src="" alt="profile" class="rounded-2xl w-72 h-72 object-cover shadow-xl">
+                </div>
+            </section>
+
+            <!-- about -->
+            <section id="about" class="max-w-7xl mx-auto px-6 py-20" aria-labelledby="about-title">
+                <h2 class="text-3xl font-bold mb-6">About Me</h2>
+
+                <div class="bg-slate-800 p-8 rounded-2xl shadow-lg space-y-4 text-slate-300">
+                    <p id="aboutText1"></p>
+                    <p id="aboutText2"></p>
+
+                    <div id="aboutTags" class="flex flex-wrap gap-2 pt-4"></div>
+                </div>
+            </section>
+
+            <!-- skills -->
+            <section id="skills" class="max-w-7xl mx-auto px-6 py-16">
+                <h2 class="text-3xl font-bold mb-10">Core Skills</h2>
+
+                <div id="skillsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+            </section>
+
+            <!-- contact -->
+            <section id="contact" class="max-w-7xl mx-auto px-6 py-16">
+                <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+
+                <form class="bg-slate-800 p-8 rounded-2xl space-x-6 shadow-lg">
+                
+                    <div>
+                        <label for="name" class="block mb-2 text-sm text-slate-300">
+                            Full Name *
+                        </label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe"
+                            class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 focus:outline-none focus:border-cyan-400">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block mb-2 text-sm text-slate-300">
+                            Email Address *
+                        </label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com"
+                            class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 focus:outline-none focus:border-cyan-400">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block mb-2 text-sm text-slate-300">
+                            Message *
+                        </label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."
+                            class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700 focus:outline-none focus:border-cyan-400"></textarea>
+                    </div>
+
+                    <div class="flex gap-4 flex-wrap">
+                        <button type="submit" 
+                        class="px-6 py-3 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition">
+                            Send Message
+                        </button>
+
+                        <button type="reset" class="border border-slate-600 px-6 py-3 rounded-lg hover:bg-slate-700 transition">    
+                            Clear
+                        </button>
+                </form>
+            </section>
+
+
+        <!-- FOOTER -->
+         <footer class="footer">
+            <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p id="footerText" class="text-slate-400 text-sm"></p>
+
+                <div id="footerLinks" class="flex gap-4 text-sm"></div>
+
+            </div>
+         </footer>
+
+         <script src="../lib/script.js"></script>
+</body>
+</html>
